@@ -1,0 +1,91 @@
+/* style.css */
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #111; /* Cor de fundo preta */
+    color: #eee; /* Cor do texto principal cinza claro */
+}
+
+h1, h2, h3 {
+    color: #ddd; /* Cor dos títulos cinza claro */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: none; /* Remove a borda */
+    background-color: #222; /* Fundo cinza escuro para o container */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra branca suave */
+}
+
+.section {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333; /* Linha divisória cinza escuro */
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-info a {
+    color: #00a0e9; /* Cor do link azul claro */
+    text-decoration: none;
+}
+
+.experience-item,
+.education-item {
+    margin-bottom: 10px;
+}
+
+.experience-item h3,
+.education-item h3 {
+    margin-bottom: 5px;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #333; /* Fundo cinza escuro para as habilidades */
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #eee; /* Cor do texto das habilidades cinza claro */
+}
+
+.project-item {
+    margin-bottom: 10px;
+}
+
+.project-item h3 {
+    margin-bottom: 5px;
+}
+
+.language-list {
+    list-style: none;
+    padding: 0;
+}
+
+.language-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.award-item {
+    margin-bottom: 10px;
+}
+
+.award-item h3 {
+    margin-bottom: 5px;
+}
+
+.references p {
+    text-align: center;
+}
