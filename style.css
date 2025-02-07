@@ -3,36 +3,36 @@
 body {
     font-family: sans-serif;
     margin: 20px;
-    background-color: #111; /* Cor de fundo preta */
-    color: #eee; /* Cor do texto principal cinza claro */
+    background-color: #f4f4f4; /* Cor de fundo cinza claro */
+    color: #333; /* Cor do texto principal cinza escuro */
 }
 
 h1, h2, h3 {
-    color: #ddd; /* Cor dos títulos cinza claro */
+    color: #111; /* Cor dos títulos cinza mais escuro */
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    border: none; /* Remove a borda */
-    background-color: #222; /* Fundo cinza escuro para o container */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Sombra branca suave */
+    border: 1px solid #ddd; /* Borda cinza claro */
+    background-color: #fff; /* Fundo branco para o container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 .section {
     margin-bottom: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid #333; /* Linha divisória cinza escuro */
+    border-bottom: 1px solid #eee; /* Linha divisória cinza claro */
 }
 
 .contact-info {
     margin-bottom: 30px;
-    text-align: center;
+    text-align: center; /* Centraliza as informações de contato */
 }
 
 .contact-info a {
-    color: #00a0e9; /* Cor do link azul claro */
+    color: #007bff; /* Cor do link padrão */
     text-decoration: none;
 }
 
@@ -54,10 +54,9 @@ h1, h2, h3 {
 .skill-list li {
     display: inline-block;
     margin-right: 10px;
-    background-color: #333; /* Fundo cinza escuro para as habilidades */
+    background-color: #eee; /* Fundo cinza claro para as habilidades */
     padding: 5px 10px;
-    border-radius: 5px;
-    color: #eee; /* Cor do texto das habilidades cinza claro */
+    border-radius: 5px; /* Bordas arredondadas */
 }
 
 .project-item {
@@ -87,5 +86,5 @@ h1, h2, h3 {
 }
 
 .references p {
-    text-align: center;
+    text-align: center; /* Centraliza o texto de referências */
 }
