@@ -26,7 +26,7 @@
 
         .header {
             display: flex;
-            flex-direction: column; /* Organiza os elementos verticalmente */
+            flex-direction: column;
             align-items: center;
         }
 
@@ -55,13 +55,64 @@
         .button-container a:hover {
             background-color: #0056b3;
         }
+
+        /* Estilos adicionados para a tabela */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Estilos para o formulário de comentários */
+        .comments-section {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .comments-section h2 {
+            margin-bottom: 15px;
+        }
+
+        .comments-section textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        .comments-section button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comments-section button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <h1>Dego da Silva Borges</h1> <!-- Nome acima da imagem -->
+            <h1>Dego da Silva Borges</h1>
             <img class="profile-pic" src="perfil.jpeg" alt="Foto de Perfil">
         </div>
         <div class="button-container">
@@ -70,7 +121,7 @@
             <a href="volei.html">Esforço no Vôlei</a>
             <a href="gestao.html">Liderança e Gestão</a>
         </div>
-        
+
         <div class="contact-info">
             <p>
                 <strong>Email:</strong> <a href="mailto:dego.borges@estudante.ifto.edu.br">dego.borges@estudante.ifto.edu.br</a> |
@@ -79,23 +130,12 @@
                 <strong>GitHub:</strong> <a href="https://github.com/Degogg" target="_blank">github.com/Degogg</a>
             </p>
         </div>
-        
+
         <div class="section" id="summary">
             <h2>Resumo Profissional</h2>
             <p>
                 Estudante do 3° ano do curso de Informática na Instituição Federal do Tocantins (IFTO), com grande interesse em desenvolvimento web e infraestrutura...
             </p>
-        </div>
-
-        <div class="section" id="experience">
-            <h2>Experiência Profissional</h2>
-            <div class="experience-item">
-                <h3>Técnico em Informática</h3>
-                <p>IFTO - Noturno</p>
-                <ul>
-                    <li>Responsável pela manutenção de um laboratório com 42 Computadores...</li>
-                </ul>
-            </div>
         </div>
 
         <div class="section" id="education">
@@ -147,6 +187,37 @@
                 Ricardo Pimentel<br>
                 Thatiane Oliveira
             </p>
+        </div>
+
+        <div class="section" id="experience">
+            <h2>Experiência Profissional</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cargo</th>
+                        <th>Instituição</th>
+                        <th>Responsabilidades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Técnico em Informática</td>
+                        <td>IFTO - Noturno</td>
+                        <td>Responsável pela manutenção de um laboratório com 42 Computadores...</td>
+                    </tr>
+                    <tr>
+                        <td>Outro Cargo</td>
+                        <td>Outra Instituição</td>
+                        <td>Outras Responsabilidades...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comentários</h2>
+            <textarea id="comments" name="comments" rows="4" placeholder="Deixe seu comentário"></textarea>
+            <button type="button">Enviar Comentário</button>
         </div>
     </div>
 </body>
